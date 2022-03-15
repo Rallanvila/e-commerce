@@ -33,7 +33,7 @@ export default function Product({ product, onAddToCart }) {
 					<Typography
 						dangerouslySetInnerHTML={{ __html: product.description }}
 						variant="body2"
-						color="secondary"
+						// color="grey[500]"
 					/>
 				</div>
 			</CardContent>
