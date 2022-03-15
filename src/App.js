@@ -50,7 +50,6 @@ const App = () => {
 				checkoutTokenId,
 				newOrder,
 			);
-
 			setOrder(incomingOrder);
 			refreshCart();
 		} catch (error) {
@@ -63,7 +62,6 @@ const App = () => {
 		fetchCart();
 	}, []);
 
-	console.log(cart);
 	return (
 		<Router>
 			<div>

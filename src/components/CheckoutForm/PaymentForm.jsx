@@ -16,6 +16,7 @@ export default function PaymentForm({
 	onCaptureCheckout,
 	nextStep,
 	shippingData,
+	timeout,
 }) {
 	const handleSubmit = async (event, elements, stripe) => {
 		event.preventDefault();
@@ -55,7 +56,7 @@ export default function PaymentForm({
 				},
 			};
 			onCaptureCheckout(checkoutToken.id, orderData);
-
+			timeout();
 			nextStep();
 		}
 	};
